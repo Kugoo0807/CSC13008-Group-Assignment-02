@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Group Assignment 01</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="animation.css">
+
+    <!-- PNG favicon -->
+    <link rel="icon" type="image/png" href="img/logo_web.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/logo_web.png" sizes="192x192" />
+  </head>
+  <body class="min-h-dvh bg-[#e6e3ed] text-slate-900 font-[\'Segoe UI\',_Arial,_sans-serif]">
+    <!-- HEADER -->
+    <header class="fixed inset-x-0 top-0 z-50 bg-[#003366] text-white shadow-md">
+      <div class="mx-auto max-w-6xl flex items-center justify-between px-6 py-3">
+        <img src="img/logo.jpg" alt="logo" class="h-14 w-auto rounded" />
+        <nav class="flex gap-3">
+          <a
+            href="index.tailwind.html"
+            class="px-3 py-2 rounded-md font-medium hover:bg-[#00509e] bg-[#0f82fc]"
+            >Home</a
+          >
+          <a
+            href="members.tailwind.html"
+            class="px-3 py-2 rounded-md font-medium hover:bg-[#00509e]"
+            >Members</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 sm:px-6 pt-28 pb-10 space-y-10 main-home">
+      <p class="text-center text-lg text-[#2f3a44]">Bài tập nhóm 01 - Lập trình ứng dụng Web</p>
+
+      <!-- Giới thiệu môn học -->
+      <section class="bg-white rounded-xl shadow p-5 cources-section">
+        <h2 class="text-2xl font-semibold text-[#003366] mb-3 border-l-4 border-[#007bff] pl-3">🎓 Giới thiệu về môn học</h2>
+        <article class="space-y-2">
+          <p>
+            Môn học <strong>Phát triển Ứng dụng Web</strong> cung cấp cho sinh viên kiến thức và kỹ năng cần thiết để thiết kế,
+            xây dựng và triển khai các ứng dụng web hiện đại. Sinh viên được tìm hiểu về <em>HTML, CSS, JavaScript, Node.js</em>
+            và các công nghệ phát triển web phổ biến hiện nay.
+          </p>
+        </article>
+      </section>
+
+      <!-- Giới thiệu bài tập nhóm -->
+      <section class="bg-white rounded-xl shadow p-5 project-section">
+        <h2 class="text-2xl font-semibold text-[#003366] mb-3 border-l-4 border-[#007bff] pl-3">💻 Giới thiệu Bài tập Nhóm</h2>
+        <article class="space-y-2">
+          <p>
+            Bài tập nhóm nhóm được thực hiện trong khuôn khổ môn học
+            <strong>Lập trình Ứng dụng Web</strong>, nhằm giúp sinh viên vận dụng kiến thức về
+            <em>HTML</em> và <em>CSS</em> để xây dựng một website tĩnh hoàn chỉnh.
+          </p>
+        </article>
+
+        <div class="mt-3 flex flex-col gap-3 tech">
+          <details class="bg-[#f2f7ff] border-2 border-[#003366] rounded-[10px] py-2 px-[10px]">
+            <summary class="cursor-pointer font-semibold text list-none flex items-center 
+            justify-between gap-3 [&::-webkit-details-marker]:hidden"> 
+              Ngôn ngữ 
+            </summary>
+            <ul class="list-disc ml-6 mt-1 space-y-1">
+              <li>HTML5 – Xây dựng cấu trúc nội dung trang web</li>
+              <li>CSS3 – Thiết kế và trang trí giao diện</li>
+            </ul>
+          </details>
+          <details class="bg-[#f2f7ff] border-2 border-[#003366] rounded-[10px] py-2 px-[10px]">
+            <summary class="cursor-pointer font-semibold text list-none flex items-center 
+            justify-between gap-3 [&::-webkit-details-marker]:hidden"> 
+              Công cụ
+            </summary>
+            <ul class="list-disc ml-6 mt-1 space-y-1">
+              <li>VSCode – Môi trường soạn thảo mã nguồn</li>
+              <li>GitHub – Lưu trữ và quản lý mã nguồn nhóm</li>
+            </ul>
+          </details>
+        </div>
+      </section>
+
+      <!-- Thông tin lớp -->
+      <section class="bg-white rounded-xl shadow p-5 class-info-section">
+        <h2 class="text-2xl font-semibold text-[#003366] mb-3 border-l-4 border-[#007bff] pl-3">📘 Thông tin Lớp - KTMP1</h2>
+        <article class="space-y-4">
+          <p>
+            Dự án này là một phần của môn học <strong>Phát triển Ứng dụng Web</strong>, thuộc chương trình đào tạo của
+            Trường Đại học Khoa học Tự nhiên – Đại học Quốc gia TP. Hồ Chí Minh.
+            Môn học được giảng dạy trong học kỳ I, năm học 2025.
+          </p>
+
+          <div class="bg-[#f2f7ff] border-2 border-[#003366] rounded-lg p-4 shadow-sm">
+            <ul class="space-y-2">
+              <li><strong>Mã lớp:</strong> 23KTMP1</li>
+              <li><strong>Tên môn học:</strong> Phát triển Ứng dụng Web</li>
+              <li><strong>Mã môn học:</strong> CSC13008</li>
+              <li>
+                <strong>Giảng viên phụ trách:</strong><br />
+                Thầy: Đỗ Nguyên Kha <br /> Thầy: Trương Phước Lộc <br /> Thầy: Mai Anh Tuấn
+              </li>
+              <li><strong>Thời gian học:</strong> T3 07:30-11:10</li>
+              <li><strong>Phòng học:</strong> F.301 – Cơ sở Nguyễn Văn Cừ</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- Video -->
+      <aside class="bg-white rounded-xl shadow p-5 video-container">
+        <h2 class="text-2xl font-semibold text-[#003366] mb-3 border-l-4 border-[#007bff] pl-3">🎥 Video giới thiệu về Trường Đại học Khoa học Tự nhiên</h2>
+        <div class="mt-2 overflow-hidden rounded-lg shadow">
+          <div class="aspect-video">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/PAvnW8pizZc"
+              title="Video giới thiệu Trường Khoa học Tự nhiên"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="bg-[#003366] text-[#e6e3ed] text-center py-3">© 2025 HCMUS - Web Group Assignment 02</footer>
+  </body>
+</html>

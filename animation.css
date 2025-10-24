@@ -1,0 +1,104 @@
+:root{
+  --primary:    #2f3a44;
+  --secondary:  #003366;
+  --tertiary:   #007bff;
+  --details:    #f2f7ff;
+  --bg-light:   #e6e3ed;
+  --text-900:   #0f172a;
+  --text-800:   #111827;
+  --shadow-1:  0  8px 24px rgba(2,6,23,.06);
+  --shadow-2:  0 12px 32px rgba(2,6,23,.10);
+  --nav-hover:  #00509e;
+  --nav-link:   #0f82fc;
+}
+
+/* SECTION */
+.main-home > section:hover,
+.main-member > section.intro-member:hover { transform: translateX(-10px); }
+
+/* CONTACT */
+.main-member .contact-list li:hover {
+  background-color: var(--details);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+.main-member .contact-list a:hover {
+  color: var(--tertiary);
+  text-decoration: underline;
+}
+
+/* MEMBER CARD */
+.member-card {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+.member-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 200, 255, 0.10),
+    rgba(90, 40, 200, 0.12),
+    rgba(0, 255, 180, 0.08)
+  );
+  background-size: 220% 220%;
+  opacity: 0;
+  transition: opacity .4s ease, background-position 2s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+.member-card:hover /* Bóng đổ ánh xanh */ { 
+  transform: scale(1.02);
+  box-shadow:
+    0 0 20px rgba(0, 200, 255, 0.25),
+    0 0 40px rgba(90, 40, 200, 0.15),
+    0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.member-card:hover::after {
+  opacity: 1;
+  background-position: 100% 0;
+}
+
+/* ====== Tắt hiệu ứng ====== */
+@media (max-width: 1024px), (prefers-reduced-motion: reduce) {
+  .member-card,
+  .member-card:hover {
+    animation: none !important;
+    transform: none !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12) !important;
+    transition: none !important;
+  }
+  .member-card::after {
+    animation: none !important;
+    opacity: 0 !important;
+    background: none !important;
+    transition: none !important;
+  }
+  .main-home > section,
+  .main-member > section.intro-member {
+    transform: none !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12) !important;
+    transition: none !important;
+  }
+  .main-home > section:hover,
+  .main-member > section.intro-member:hover {
+    transform: none !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12) !important;
+  }
+  .main-member .contact-list li,
+  .main-member .contact-list li:hover,
+  .main-member .contact-list a,
+  .main-member .contact-list a:hover {
+    transform: none !important;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12) !important;
+    transition: none !important;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

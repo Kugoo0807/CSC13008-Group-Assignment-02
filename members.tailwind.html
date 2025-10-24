@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu thành viên</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="animation.css">
+
+    <!-- PNG favicon -->
+    <link rel="icon" type="image/png" href="img/logo_web.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="img/logo_web.png" sizes="192x192" />
+  </head>
+  <body class="min-h-dvh bg-[#e6e3ed] text-slate-900 font-[\'Segoe UI\',_Arial,_sans-serif]">
+    <!-- HEADER -->
+    <header class="fixed inset-x-0 top-0 z-50 bg-[#003366] text-white shadow-md">
+      <div class="mx-auto max-w-6xl flex items-center justify-between px-6 py-3">
+        <img src="img/logo.jpg" alt="logo" class="h-14 w-auto rounded" />
+        <nav class="flex gap-3">
+          <a
+            href="index.tailwind.html"
+            class="px-3 py-2 rounded-md font-medium hover:bg-[#00509e]"
+            >Home</a
+          >
+          <a
+            href="members.tailwind.html"
+            class="px-3 py-2 rounded-md font-medium hover:bg-[#00509e] bg-[#0f82fc]"
+            >Members</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl px-4 sm:px-6 pt-28 pb-10 space-y-10 main-member">
+      <section class="bg-white rounded-xl shadow p-5 intro-member card">
+        <h2 class="text-2xl font-semibold text-[#003366] mb-3 border-l-4 border-[#007bff] pl-3">👨🏻‍🤝‍👨🏻 Giới thiệu thành viên</h2>
+        <p class="text-slate-800 leading-relaxed">
+          Nhóm chúng tôi gồm 5 thành viên là sinh viên năm 3 của Trường Đại học Khoa học Tự nhiên TP.HCM.
+          Mỗi người đảm nhận một vai trò khác nhau trong dự án, cùng nhau học hỏi và phát triển kỹ năng về lập trình,
+          thiết kế web, cũng như làm việc nhóm để hoàn thiện sản phẩm một cách tốt nhất.
+        </p>
+      </section>
+
+      <!-- Members Grid -->
+      <section class="flex flex-wrap gap-[18px] justify-center items-stretch mb-10 member-container">
+        <!-- Card 1 -->
+        <article class="flex flex-col rounded-xl overflow-hidden bg-white shadow hover:shadow-lg 
+        transition member-card card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-12px)]">
+          <div class="block w-full h-[65%] flex-none aspect-[4/3] bg-cover bg-no-repeat bg-[position:center_20%]" 
+          style="background-image: url('img/nam.jpg');"></div>
+          <div class="p-4 flex flex-col gap-1">
+            <h3 class="text-center font-bold text-[#2f3a44]">Nguyễn Nhật Nam</h3>
+            <p class="text-center font-semibold text-slate-700">MSSV: 23127092</p>
+            <p class="text-center text-sm text-slate-800 leading-relaxed">
+              Sinh viên năm 3. Kĩ năng: C++, HTML, Python. Thích phát triển backend và giải thuật.
+            </p>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="flex flex-col rounded-xl overflow-hidden bg-white shadow hover:shadow-lg 
+        transition member-card card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-12px)]">
+          <div class="block w-full h-[65%] flex-none aspect-[4/3] bg-cover bg-no-repeat bg-[position:center_20%]" 
+          style="background-image: url('img/phuc.jpg');"></div>
+          <div class="p-4 flex flex-col gap-1">
+            <h3 class="text-center font-bold text-[#2f3a44]">Lê Quang Phúc</h3>
+            <p class="text-center font-semibold text-slate-700">MSSV: 23127102</p>
+            <p class="text-center text-sm text-slate-800 leading-relaxed">
+              Sinh viên năm 3. Kĩ năng: Java, JavaScript. Chịu trách nhiệm frontend và UI/UX.
+            </p>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="flex flex-col rounded-xl overflow-hidden bg-white shadow hover:shadow-lg 
+        transition member-card card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-12px)]">
+          <div class="block w-full h-[65%] flex-none aspect-[4/3] bg-cover bg-no-repeat bg-[position:center_20%]" 
+          style="background-image: url('img/khoa.jpg');"></div>
+          <div class="p-4 flex flex-col gap-1">
+            <h3 class="text-center font-bold text-[#2f3a44]">Nguyễn Quang Đăng Khoa</h3>
+            <p class="text-center font-semibold text-slate-700">MSSV: 23127212</p>
+            <p class="text-center text-sm text-slate-800 leading-relaxed">
+              Sinh viên năm 3. Kĩ năng: Python, Java. Làm dữ liệu và xử lý file nhị phân.
+            </p>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="flex flex-col rounded-xl overflow-hidden bg-white shadow hover:shadow-lg 
+        transition member-card card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-12px)]">
+          <div class="block w-full h-[65%] flex-none aspect-[4/3] bg-cover bg-no-repeat bg-center" 
+          style="background-image: url('img/minh.jpg');"></div>
+          <div class="p-4 flex flex-col gap-1">
+            <h3 class="text-center font-bold text-[#2f3a44]">Đỗ Thành Minh</h3>
+            <p class="text-center font-semibold text-slate-700">MSSV: 23127420</p>
+            <p class="text-center text-sm text-slate-800 leading-relaxed">
+              Sinh viên năm 3. Kĩ năng: C++, HTML/CSS. Hỗ trợ tối ưu thuật toán và testing.
+            </p>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="flex flex-col rounded-xl overflow-hidden bg-white shadow hover:shadow-lg 
+        transition member-card card w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-12px)]">
+          <div class="block w-full h-[65%] flex-none aspect-[4/3] bg-cover bg-no-repeat bg-[position:center_80%]" 
+          style="background-image: url('img/toan.jpg');"></div>
+          <div class="p-4 flex flex-col gap-1">
+            <h3 class="text-center font-bold text-[#2f3a44]">Phạm Đức Toàn</h3>
+            <p class="text-center font-semibold text-slate-700">MSSV: 23127540</p>
+            <p class="text-center text-sm text-slate-800 leading-relaxed">
+              Sinh viên năm 3. Kĩ năng: C++, Python. Chịu trách nhiệm tích hợp và deploy.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- Contact -->
+      <aside class="bg-white rounded-xl shadow p-5 contact">
+        <h2 class="text-2xl font-semibold text-[#003366] border-l-4 border-[#007bff] pl-3">🔗 Thông tin liên hệ</h2>
+
+        <!-- List 1 -->
+        <h3 class="text-xl font-bold text-[#003366] mb-5 pt-10 tracking-wide">Nguyễn Nhật Nam</h3>
+        <ul class="grid sm:grid-cols-3 gap-3 contact-list">
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            📧 <a href="mailto:nnnam23@clc.fitus.edu.vn" class="font-medium text-[#2f3a44] hover:underline">Email</a>
+          </li>
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            💻 <a href="https://facebook.com/ng.nam2012" target="_blank" class="font-medium text-[#2f3a44] hover:underline">Facebook</a>
+          </li>
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            🌐 <a href="https://github.com/ngnam2012/" target="_blank" class="font-medium text-[#2f3a44] hover:underline">GitHub</a>
+          </li>
+        </ul>
+
+        <!-- List 2 -->
+        <h3 class="text-xl font-bold text-[#003366] mb-5 pt-10 tracking-wide">Lê Quang Phúc</h3>
+        <ul class="grid sm:grid-cols-3 gap-3 contact-list">
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            📧 <a href="mailto:lqphuc23@clc.fitus.edu.vn" class="font-medium text-[#2f3a44] hover:underline">Email</a>
+          </li>
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            💻 <a href="https://facebook.com/247114.v" target="_blank" class="font-medium text-[#2f3a44] hover:underline">Facebook</a>
+          </li>
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            🌐 <a href="https://github.com/phucle04/" target="_blank" class="font-medium text-[#2f3a44] hover:underline">GitHub</a>
+          </li>
+        </ul>
+
+        <!-- List 3 -->
+        <h3 class="text-xl font-bold text-[#003366] mb-5 pt-10 tracking-wide">Nguyễn Quang Đăng Khoa</h3>
+        <ul class="grid sm:grid-cols-3 gap-3 contact-list">
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            📧 <a href="mailto:nqdkhoa23@clc.fitus.edu.vn" class="font-medium text-[#2f3a44] hover:underline">Email</a>
+          </li>
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            💻 <a href="https://facebook.com/kugoo0807" target="_blank" class="font-medium text-[#2f3a44] hover:underline">Facebook</a>
+          </li>
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            🌐 <a href="https://github.com/Kugoo0807/" target="_blank" class="font-medium text-[#2f3a44] hover:underline">GitHub</a>
+          </li>
+        </ul>
+
+        <!-- List 4 -->
+        <h3 class="text-xl font-bold text-[#003366] mb-5 pt-10 tracking-wide">Đỗ Thành Minh</h3>
+        <ul class="grid sm:grid-cols-3 gap-3 contact-list">
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            📧 <a href="mailto:dtminh23@clc.fitus.edu.vn" class="font-medium text-[#2f3a44] hover:underline">Email</a>
+          </li>
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            💻 <a href="https://facebook.com/dtm1404" target="_blank" class="font-medium text-[#2f3a44] hover:underline">Facebook</a>
+          </li>
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            🌐 <a href="https://github.com/huiw14/" target="_blank" class="font-medium text-[#2f3a44] hover:underline">GitHub</a>
+          </li>
+        </ul>
+
+        <!-- List 5 -->
+        <h3 class="text-xl font-bold text-[#003366] mb-5 pt-10 tracking-wide">Phạm Đức Toàn</h3>
+        <ul class="grid sm:grid-cols-3 gap-3 contact-list">
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            📧 <a href="mailto:pdtoan23@clc.fitus.edu.vn" class="font-medium text-[#2f3a44] hover:underline">Email</a>
+          </li>
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            💻 <a href="https://facebook.com/WuhTevoL" target="_blank" class="font-medium text-[#2f3a44] hover:underline">Facebook</a>
+          </li>
+          <li class="bg-white border-2 border-[#003366] rounded-lg p-3 text-center hover:shadow-md transition">
+            🌐 <a href="https://github.com/DuckTonn/" target="_blank" class="font-medium text-[#2f3a44] hover:underline">GitHub</a>
+          </li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer class="bg-[#003366] text-[#e6e3ed] text-center py-3">© 2025 HCMUS - Web Group Assignment 02</footer>
+  </body>
+</html>
